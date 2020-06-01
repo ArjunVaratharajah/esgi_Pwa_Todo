@@ -12,7 +12,6 @@ export class HomePage {
   myTask: string;
   addTask: boolean;
   tasks = [];
-  editing: boolean;
 
   constructor(
     public afDB: AngularFireDatabase,
