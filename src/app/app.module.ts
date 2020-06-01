@@ -14,14 +14,15 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 //import { AngularFireAuthModule } from '@angular/fire/auth';
 //import { AngularFireStorageModule } from '@angular/fire/storage';
 
+
 export const firebaseConfig = {
-  apiKey: "AIzaSyBkLY_VaVZKapcMtW0A73WffrQBetFa_Rc",
-  authDomain: "todolist-ea015.firebaseapp.com",
-  databaseURL: "https://todolist-ea015.firebaseio.com",
-  projectId: "todolist-ea015",
-  storageBucket: "todolist-ea015.appspot.com",
-  messagingSenderId: "606145390782",
-  appId: "1:606145390782:web:668606f35bc0d5a32d16ef"
+  apiKey: '****************************************',
+  authDomain: 'todolist-*******.firebaseapp.com',
+  databaseURL: 'https://todolist-*******.firebaseio.com',
+  projectId: 'todolist-*******',
+  storageBucket: 'todolist-*******.appspot.com',
+  messagingSenderId: '**************',
+  appId: '1:**************:web:**************'
 };
 
 @NgModule({
