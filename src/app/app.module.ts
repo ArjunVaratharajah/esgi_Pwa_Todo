@@ -9,10 +9,33 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+//import { AngularFireAuthModule } from '@angular/fire/auth';
+//import { AngularFireStorageModule } from '@angular/fire/storage';
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyBkLY_VaVZKapcMtW0A73WffrQBetFa_Rc",
+  authDomain: "todolist-ea015.firebaseapp.com",
+  databaseURL: "https://todolist-ea015.firebaseio.com",
+  projectId: "todolist-ea015",
+  storageBucket: "todolist-ea015.appspot.com",
+  messagingSenderId: "606145390782",
+  appId: "1:606145390782:web:668606f35bc0d5a32d16ef"
+};
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    //AngularFireAuthModule,
+    //AngularFireStorageModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
