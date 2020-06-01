@@ -14,7 +14,6 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 //import { AngularFireAuthModule } from '@angular/fire/auth';
 //import { AngularFireStorageModule } from '@angular/fire/storage';
 
-
 export const firebaseConfig = {
   apiKey: '****************************************',
   authDomain: 'todolist-*******.firebaseapp.com',
